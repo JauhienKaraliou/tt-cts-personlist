@@ -12,6 +12,8 @@
         "zendframework/zendframework": "~2.4",
         "doctrine/common": ">=2.1",
         "doctrine/doctrine-orm-module": "0.7.*",
-        "zendframework/zend-developer-tools": "dev-master"
+        "zendframework/zend-developer-tools": "dev-master",
+        "rwoverdijk/assetmanager": "1.*",
+        "kablau-joustra/kj-sencha": "0.*"
     }
 }

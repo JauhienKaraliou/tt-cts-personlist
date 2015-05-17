@@ -4,15 +4,25 @@ namespace Person\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
+use Zend\View\Model\JsonModel;
 use Person\Entity\Person;
 
 class PersonController extends AbstractActionController
 {
     public function indexAction()
     {
+        /*
         $selectParams = $this->request->getContent();
         $personList = $this->selectAction($selectParams['education'],$selectParams['city']);
         $view = new ViewModel($personList);
+        $result = new JsonModel(array(
+	    'some_parameter' => 'some value',
+            'success'=>true,
+        ));
+
+        return $result;
+        */
+        $view = new ViewModel();
         //@todo this draft
         return $view;
     }
