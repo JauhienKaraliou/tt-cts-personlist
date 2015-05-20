@@ -27,6 +27,19 @@ class PersonController extends AbstractActionController
         return $view;
     }
 
+    public function ajaxAction($requestTime= true)
+    {
+        $response = $this->getResponse();
+        $response->setContent(date('H-i-s'));
+
+        $result = new JsonModel(array(
+            'some_parameter' => date('H-i-s'),
+            'success'=>true,
+        ));
+
+        return $result;
+    }
+
     public function createAction($fullname)
     {
         $person = new Person();

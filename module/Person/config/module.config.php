@@ -57,6 +57,9 @@ return array(
         ),
     ),
     'view_manager' => array(
+        'strategies' => array(
+            'ViewJsonStrategy',
+        ),
         'template_path_stack' => array(
             'person' => __DIR__ . '/../view',
         ),
